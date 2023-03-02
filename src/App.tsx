@@ -5,9 +5,14 @@ import './App.scss';
 
 function App() {
   return (
-    <main>
-      <Outlet />
-    </main>
+    <>
+      <header>
+      </header>
+      <main>
+        <Outlet ></Outlet>
+      </main>
+      <footer>Footer</footer>
+    </>
   );
 }
 

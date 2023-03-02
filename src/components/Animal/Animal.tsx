@@ -10,11 +10,15 @@ interface IAnimalProps {
     const navigate = useNavigate();
   
 
-    return(
-        <>
+    return (
+      <>
         <div className="animal">
-            <h4>{props.animal.name}</h4>
-            </div></>
+          <h4>{props.animal.name}</h4>
+          <div className="image-container">
+            <img src={props.animal.imageUrl} alt={props.animal.name} />
+          </div>
+        </div>
+      </>
     );
 
   };
