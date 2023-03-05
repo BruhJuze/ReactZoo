@@ -6,12 +6,9 @@ import './App.scss';
 function App() {
   return (
     <>
-      <header>
-      </header>
       <main>
         <Outlet ></Outlet>
       </main>
-      <footer>Footer</footer>
     </>
   );
 }

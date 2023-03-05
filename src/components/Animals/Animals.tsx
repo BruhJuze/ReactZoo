@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { IAnimalSmall } from "../../models/IAnimalSmall"
 import { getAnimals } from "../../services/animalService";
 import { Animal } from "../Animal/Animal";
+import "./Animals.scss";
 
 
 
@@ -26,7 +27,7 @@ export const Animals = () => {
 
             animal={animal}
             key={animal.id}
-            ></Animal>
+            ></Animal> 
         );
     });
 

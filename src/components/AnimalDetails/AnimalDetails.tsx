@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useOutletContext, useParams } from "react-router-dom";
 import { IAnimal } from "../../models/IAnimal";
 import { getAnimalsById } from "../../services/animalService";
+import "./AnimalDetails.scss";
 
 
 export const AnimalDetails = () => {
@@ -37,7 +38,7 @@ export const AnimalDetails = () => {
         </>
       ) : (
         <>
-            <h3>{animal?.name}</h3>
+            <h3>{animal?.name}d</h3>
             <pre>{animal?.shortDescription}</pre>
             <img src={animal?.imageUrl} alt={animal?.name} />
         </>
